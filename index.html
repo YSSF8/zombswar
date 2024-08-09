@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZombsWar</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+</head>
+<body>
+    <div class="main-menu fullscreen">
+        <h1 class="fullscreen-title">ZombsWar</h1>
+        <div class="fullscreen-items">
+            <button role="button" class="btn" data-menu-action="play">Play</button>
+            <button role="button" class="btn" data-menu-action="settings">Settings</button>
+            <button role="button" class="btn" data-menu-action="shop">Shop</button>
+            <button role="button" class="btn" data-menu-action="tips">Tips</button>
+        </div>
+    </div>
+    <div class="game-subject">
+        <div id="status-bar">
+            <div class="left-side">
+                <div class="health-bar">
+                    <div class="inner-health-bar"></div>
+                </div>
+                <div class="score">Score: 0</div>
+                <div class="xp" style="font-size: 21px;">XP: 0</div>
+                <div class="ammo">30/30</div>
+            </div>
+            <div class="right-side">
+                <div class="timer">00:00:00</div>
+            </div>
+        </div>
+        <div class="crosshair"></div>
+        <div id="player" data-health="100"></div>
+        <div class="ultimate-cooldown ready"></div>
+    </div>
+    <h1 class="device-note" style="display: none;">This game is unsupported by your device.</h1>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+[
+    {
+        "skin": "Black",
+        "hex": "#000",
+        "price": 0,
+        "description": "Classic darkness, sleek and stealthy"
+    },
+    {
+        "skin": "White",
+        "hex": "#fff",
+        "price": 30,
+        "description": "Pure and pristine, a blank canvas"
+    },
+    {
+        "skin": "Cyan",
+        "hex": "#0ff",
+        "price": 40,
+        "description": "Bright and electric, like a clear sky"
+    },
+    {
+        "skin": "Marroon",
+        "hex": "#800000",
+        "price": 40,
+        "description": "Deep and rich, reminiscent of wine"
+    },
+    {
+        "skin": "Chicken",
+        "hex": "#ff6347",
+        "price": 70,
+        "description": "Playful and warm, like a sunset"
+    },
+    {
+        "skin": "Purple",
+        "hex": "#800080",
+        "price": 60,
+        "description": "Regal and mysterious, a royal hue"
+    },
+    {
+        "skin": "Whimsical Tree",
+        "hex": "#8fbc8f",
+        "price": 120,
+        "description": "Soft and natural, like a forest glade"
+    },
+    {
+        "skin": "Magic Droplet",
+        "hex": "#7ae9f3",
+        "price": 100,
+        "description": "Shimmering and ethereal, like enchanted water"
+    },
+    {
+        "skin": "Fried Egg",
+        "hex": "#ffd700",
+        "price": 100,
+        "description": "Golden and sunny, appetizing look"
+    },
+    {
+        "skin": "Cosmic Nebula",
+        "hex": "#4b0082",
+        "price": 500,
+        "description": "Deep space mystery, starry night"
+    },
+    {
+        "skin": "Molten Lava",
+        "hex": "#ff4500",
+        "price": 450,
+        "description": "Fiery and intense, burning bright"
+    },
+    {
+        "skin": "Ethereal Ghost",
+        "hex": "#8f8fa9",
+        "price": 600,
+        "description": "Misty and otherworldly, spectral appearance"
+    },
+    {
+        "skin": "Dragon Scale",
+        "hex": "#228b22",
+        "price": 550,
+        "description": "Emerald and powerful, reptilian texture"
+    },
+    {
+        "skin": "Neon Pulse",
+        "hex": "#ff1493",
+        "price": 480,
+        "description": "Vibrant and energetic, eye-catching pink"
+    },
+    {
+        "skin": "Celestial Aurora",
+        "hex": "#1a2b3c",
+        "price": 1000,
+        "description": "Dark and mesmerizing, cosmic light show"
+    },
+    {
+        "skin": "Radish",
+        "hex": "#8b8e36+#d5d7a1",
+        "price": 1050,
+        "description": "Earthy and vibrant, a two-toned veggie delight"
+    },
+    {
+        "skin": "Sunset Blaze",
+        "hex": "#ff4500+#ffd700",
+        "price": 1200,
+        "description": "A fiery blend of orange and gold, like a spectacular sunset"
+    },
+    {
+        "skin": "Ocean Depths",
+        "hex": "#000080+#00ffff",
+        "price": 1350,
+        "description": "Deep navy fading into bright cyan, mimicking the mysterious ocean"
+    },
+    {
+        "skin": "Forest Whisper",
+        "hex": "#228b22+#98fb98",
+        "price": 1500,
+        "description": "Dark forest green transitioning to pale green, echoing a serene woodland"
+    },
+    {
+        "skin": "Cosmic Fusion",
+        "hex": "#4b0082+#ff1493",
+        "price": 2000,
+        "description": "Deep indigo merging with hot pink, reminiscent of galactic nebulae"
+    },
+    {
+        "skin": "Diamond Frost",
+        "hex": "#b0e0e6+#385357",
+        "price": 1150,
+        "description": "Powder blue fading into pure white, sparkling like ice crystals"
+    }
+]

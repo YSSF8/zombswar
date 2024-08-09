@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Ammo Capacity",
+        "description": "Increases the ammo capacity of your weapon",
+        "xpRequired": 60,
+        "image": "ammo-box"
+    },
+    {
+        "name": "Damage",
+        "description": "Increases the damage of your weapon",
+        "xpRequired": 70,
+        "image": "broken-shield"
+    },
+    {
+        "name": "Health",
+        "description": "Increases the max health of your character",
+        "xpRequired": 70,
+        "image": "heart"
+    },
+    {
+        "name": "Speed",
+        "description": "Increases the movement speed of your character",
+        "xpRequired": 40,
+        "image": "speed"
+    },
+    {
+        "name": "Shrink",
+        "description": "Decreases the size of your character",
+        "xpRequired": 30,
+        "image": "shrink"
+    },
+    {
+        "name": "Bullet Speed",
+        "description": "Increases the bullet speed of your weapon",
+        "xpRequired": 50,
+        "image": "ammo-pouch"
+    }
+]
