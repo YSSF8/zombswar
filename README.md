@@ -57,11 +57,9 @@ Earn coins by defeating zombies and purchase new character skins in the shop.
 - Implements a custom animation system
 - Utilizes local storage for saving player stats and settings
 
-## Installation
+## Where to play
 
-1. Clone the repository
-2. Open `index.html` in a modern web browser
-3. Enjoy the game!
+Click [here](https://yssf8.github.io/zombswar) to play the game!
 
 ## Contributing
 
