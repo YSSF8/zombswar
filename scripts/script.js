@@ -43,7 +43,7 @@ const scoreIdentifier = document.querySelector('.score');
 const xpIdentifier = document.querySelector('.xp');
 const ammoIdentifier = document.querySelector('.ammo');
 const playerHealthBar = document.querySelector('.inner-health-bar');
-const music = new Audio('../assets/audio/music.mp3');
+const music = new Audio('./assets/audio/music.mp3');
 const ZOMBIE_TYPES = {
     SMALL: { size: 100, speedMultiplier: 1.5, damageMultiplier: .5, score: 5, xp: 2, health: 50 },
     REGULAR: { size: 150, speedMultiplier: 1, damageMultiplier: 1, score: 10, xp: 5, health: 100 },
@@ -68,7 +68,7 @@ const playerHeight = player.offsetHeight;
 
 function setPlayerSkin(skinName) {
     if (skinName) {
-        fetch('../assets/data/skins.json')
+        fetch('./assets/data/skins.json')
             .then(res => res.json())
             .then(data => {
                 const skinData = data.find(skin => skin.skin === skinName);
@@ -178,7 +178,7 @@ const menuAction = {
         }
     },
     shop() {
-        fetch('../assets/data/skins.json')
+        fetch('./assets/data/skins.json')
             .then(res => res.json())
             .then(data => {
                 let shopContent = '';
@@ -202,7 +202,7 @@ const menuAction = {
                             } else {
                                 return `
                                 <span>
-                                    <img src="../assets/images/coin.png" height="20" alt="$">
+                                    <img src="./assets/images/coin.png" height="20" alt="$">
                                 </span>
                                 <span>${data[i].price.toLocaleString('en-US')}</span>
                                 `;
@@ -236,7 +236,7 @@ const menuAction = {
                                     <td>
                                         <div class="coin-preview">
                                             <span>
-                                                <img src="../assets/images/coin.png" height="20" alt="$">
+                                                <img src="./assets/images/coin.png" height="20" alt="$">
                                             </span>
                                             <span>${item.price.toLocaleString('en-US')}</span>
                                         </div>
@@ -286,7 +286,7 @@ const menuAction = {
                 coins.classList.add('coins');
                 coins.innerHTML = `
                 <span>
-                    <img src="../assets/images/coin.png" height="20" alt="$">
+                    <img src="./assets/images/coin.png" height="20" alt="$">
                     </span>
                     <span>${playerStats?.coins.toLocaleString('en-US') || 0}</span>
                 `;
@@ -569,7 +569,7 @@ class Window {
         this.updateDisplay();
 
         if (tabId === 'shop') {
-            fetch('../assets/data/skins.json')
+            fetch('./assets/data/skins.json')
                 .then(res => res.json())
                 .then(data => {
                     const coins = windowElement.querySelector('.coins');
@@ -650,7 +650,7 @@ function createProjectile() {
     }
 
     const projectile = document.createElement('img');
-    projectile.src = '../assets/images/bullet.png';
+    projectile.src = './assets/images/bullet.png';
     projectile.style.position = 'absolute';
     projectile.style.left = `${playerX}px`;
     projectile.style.top = `${playerY}px`;
@@ -713,7 +713,7 @@ function updateProjectiles() {
 function createZombie() {
     const zombieType = getRandomZombieType();
     const zombie = document.createElement('img');
-    zombie.src = '../assets/images/zombie.png';
+    zombie.src = './assets/images/zombie.png';
     zombie.draggable = false;
     zombie.style.position = 'absolute';
     zombie.style.height = `${zombieType.size}px`;
@@ -947,14 +947,14 @@ function checkItemCollisions() {
 }
 
 function playAudio(fileName) {
-    const audio = new Audio(`../assets/audio/${fileName}.mp3`);
+    const audio = new Audio(`./assets/audio/${fileName}.mp3`);
     audio.volume = savedSettings.effectsVolume;
     audio.play();
     return audio;
 }
 
 function openXpStore(store) {
-    fetch('../assets/data/xp-store.json')
+    fetch('./assets/data/xp-store.json')
         .then(res => res.json())
         .then(data => {
             pause = true;
@@ -966,7 +966,7 @@ function openXpStore(store) {
             for (let i in data.sort((a, b) => a.name.localeCompare(b.name))) {
                 content += `
                 <div class="item-container" data-title="${data[i].description}" data-index="${i}">
-                    <img src="../assets/images/${data[i].image}.png" height="60" draggable="false" alt="${data[i].name}">
+                    <img src="./assets/images/${data[i].image}.png" height="60" draggable="false" alt="${data[i].name}">
                     <div class="item-name">${data[i].name}</div>
                     <div class="xp-required">${data[i].xpRequired}</div>
                 </div>
@@ -1074,7 +1074,7 @@ function createXpStore() {
     const xpStore = document.createElement('img');
     xpStore.classList.add('xp-store');
     xpStore.draggable = false;
-    xpStore.src = '../assets/images/xp-store.png';
+    xpStore.src = './assets/images/xp-store.png';
     xpStore.height = 50;
     xpStore.style.position = 'fixed';
     xpStore.style.left = `${Math.random() * (window.innerWidth - 100)}px`;
@@ -1449,7 +1449,7 @@ const debugActions = {
         debug.description = 'You have been given 100000 coins';
     },
     giveallskins() {
-        fetch('../assets/data/skins.json')
+        fetch('./assets/data/skins.json')
             .then(res => res.json())
             .then(data => {
                 playerStats.itemsBought = data.map(item => item.skin);
@@ -1485,7 +1485,7 @@ const debugActions = {
     },
     killzombies() {
         zombies = [];
-        document.querySelectorAll('img[src="../assets/images/zombie.png"]').forEach(zombie => zombie.remove());
+        document.querySelectorAll('img[src="./assets/images/zombie.png"]').forEach(zombie => zombie.remove());
         debug.description = 'All the zombies have been killed';
     },
     giveammo() {
